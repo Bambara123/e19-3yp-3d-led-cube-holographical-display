@@ -1,10 +1,10 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./signUp.css";
 
 import AppButton from "../AppButton/AppButton";
 import AppInput from "../AppInput/AppInput";
-import { MyContext } from "../Contexts/MyContext";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -46,7 +46,6 @@ function PostWindow(props) {
       });
 
       // Parse the JSON response data
-      const responseData = await response.json();
 
       // Handle the API response data (e.g., display success message, navigate to next page, etc.)
       if (response.ok) {

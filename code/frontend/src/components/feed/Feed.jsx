@@ -1,9 +1,8 @@
 // this contains main feed
 
 import colors from "../../styles/colors";
-import FeedCard from "../FeedCard";
 import CardsContainer from "../CardsContainer/CardsContainer";
-import feed from "./feed.css";
+
 import { Home, ViewInAr, AccountCircle } from "@mui/icons-material";
 import { useNavigate, useLocation } from "react-router-dom";
 import UploadContainer from "../UploadContainer/uploadContainer";

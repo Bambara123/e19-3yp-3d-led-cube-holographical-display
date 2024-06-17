@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 import InputMedia from "../InputMedia/InputMedia";
 import AppButton from "../AppButton/AppButton";
-import { MyContext } from "../Contexts/MyContext";
+
 import "./uploadContainer.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -67,7 +67,7 @@ export default function UploadContainer() {
 
         if (res.data !== "hex") {
           localStorage.setItem("plotData", JSON.stringify(res.data));
-          const savedData = JSON.parse(localStorage.getItem("plotData"));
+
           Plotly.newPlot("previewContainer", res.data.data, res.data.layout, {
             displayModeBar: false,
           });

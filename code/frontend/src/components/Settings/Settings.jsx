@@ -3,15 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import axios from "axios";
 
-import colors from "../../styles/colors";
 import "./../PostWindow/postWindow.css";
 import "./settings.css";
-import { TextFieldStylesForSettings } from "./../LongStyles";
 
 import AppButton from "../AppButton/AppButton";
 import InputMedia from "../InputMedia/InputMedia";
-
-import { TextField } from "@mui/material";
 
 function PostWindow(props) {
   // for navigation
@@ -22,8 +18,6 @@ function PostWindow(props) {
   console.log(email);
 
   const [previewElement, setPreviewElement] = useState(null);
-  const [username, setUsername] = useState("");
-  const [emailInput, setEmailInput] = useState("");
 
   // input media files - this in to trigger the file input click event.
   const fileInputRef = useRef(null);
