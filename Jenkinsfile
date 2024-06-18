@@ -7,11 +7,5 @@ pipeline {
       }
     }
 
-    stage('shell script') {
-      steps {
-        sh 'dir'
-      }
-    }
-
   }
 }
