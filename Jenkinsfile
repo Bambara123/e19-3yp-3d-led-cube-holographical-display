@@ -9,7 +9,7 @@ pipeline {
 
     stage('shell script') {
       steps {
-        sh 'ls -la'
+        sh 'dir'
       }
     }
 
